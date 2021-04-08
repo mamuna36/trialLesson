@@ -1,0 +1,100 @@
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  line-height: 1.6em;
+}
+h1 {
+  text-align: center;
+  margin-top: 50px;
+}
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  background-color: darkorange;
+  padding: 8px;
+  position: fixed;
+  border-radius: 5px;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+.navigation a {
+  color: indigo;
+  text-decoration: none;
+  font-size: 1.2em;
+}
+.navigation a:hover {
+  color: black;
+  text-decoration: underline;
+}
+.navigation a:active {
+  color: gray;
+}
+.navigation li {
+  list-style-type: none;
+}
+.contactForm {
+  border: 1px black solid;
+  border-radius: 10px;
+  margin: 100px auto;
+  padding: 20px;
+  width: 600px;
+
+  background-color: darkmagenta;
+}
+.contactForm h2 {
+  text-align: center;
+}
+.contactForm {
+  background-image: url("./images/tim-hufner-cWFeejk4bA0-unsplash.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  /*background-attachment: fixed */
+  color: white;
+}
+.formBody {
+  background-color: orange;
+}
+input,
+textarea {
+  margin: 5px;
+}
+.form-input {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.portfolio-items-wrapper {
+  width: 100vw;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.portfolio-item-wrapper {
+  position: relative;
+}
+.portfolio-img-background {
+  height: 350px;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.img-text-container {
+  position: absolute;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  text-align: center;
+  padding-left: 100px;
+  padding-right: 100px;
+}
+.img-text-container:hover .subtitle {
+  color: white;
+  font-weight: 600;
+}
+.img-darken {
+  transition: 1s;
+  filter: brightness(10%);
+}
